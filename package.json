@@ -1,0 +1,33 @@
+{
+  "name": "react-lazy-observer",
+  "version": "1.0.0",
+  "description": "React기반 뷰포트기반으로 하여 컴포넌트를 lazy loading시켜주는 컴포넌트입니다.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "lazy-load",
+    "viewport",
+    "intersection-observer"
+  ],
+  "author": "김규회",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "typescript": "^5.0.0",
+    "tslib": "^2.6.0",
+    "rollup": "^3.0.0"
+  }
+}
