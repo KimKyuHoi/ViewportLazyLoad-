@@ -1,6 +1,7 @@
 const resolve = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const typescript = require('@rollup/plugin-typescript');
+const PeerDepsExternalPlugin = require('rollup-plugin-peer-deps-external');
 
 module.exports = {
   input: 'src/index.ts',
@@ -25,5 +26,6 @@ module.exports = {
       declaration: true,
       declarationDir: './dist',
     }),
+    PeerDepsExternalPlugin(),
   ],
 };
